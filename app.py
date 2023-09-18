@@ -1,8 +1,8 @@
 import streamlit as st
-import openai  # Or import your GPT-3.5 clone library
+import openai
 
-# Initialize the GPT-3 API client
-openai.api_key = "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"
+# Initialize the GPT-3 API client using the secret key stored in Streamlit secrets
+openai.api_key = st.secrets["openai_api_key"]
 
 st.title("ChatGPT Clone Web App")
 
@@ -19,4 +19,4 @@ if user_input:
 
     # Display the model's response
     st.text("ChatGPT Clone:", response.choices[0].text)
-  
+    
