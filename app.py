@@ -2,7 +2,7 @@ import streamlit as st
 import openai  # Or import your GPT-3.5 clone library
 
 # Initialize the GPT-3 API client
-openai.api_key = "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"
+openai.api_key = "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"
 
 st.title("ChatGPT Clone Web App")
 
